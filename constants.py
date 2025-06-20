@@ -1,6 +1,6 @@
 # --- Parámetros del autómata ---
-GRID_WIDTH = 240
-GRID_HEIGHT = 120
+GRID_WIDTH = 100
+GRID_HEIGHT = 80
 CELL_SIZE = 6  # Tamaño de cada celda en píxeles
 
 # Estados de celda
@@ -16,7 +16,7 @@ COLORS = {
     OBSTACLE: (120, 0, 0),    # Rojo oscuro
 }
 
-# Parámetros químicos optimizados para supervivencia
-DIFFUSION_RATE = 0.15        # Reducido para mantener concentraciones
-EVAPORATION_RATE = 0.05     # Extremadamente bajo para supervivencia
-EMISSION_INTENSITY = 6.0     # Muy alto para crear gradientes fuertes
+# Parámetros químicos optimizados para supervivencia y exploración
+DIFFUSION_RATE = 0.3        # Difusión moderada para mantener gradientes
+EVAPORATION_RATE = 0.2      # Evaporación muy lenta para mantener campo base
+EMISSION_INTENSITY = 5.0     # Emisión constante desde FOOD
